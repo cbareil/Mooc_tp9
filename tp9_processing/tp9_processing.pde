@@ -31,7 +31,7 @@ void serialEvent(Serial myPort) {
   String inString = myPort.readStringUntil('\n');
   inString.replace('\n', ' ');
   cmd=trim(inString);
-  if (inString != null) {
+  if (inString != null) { // cmd valide ?
       
        println("après:"+cmd+":");
        if ( cmd.equals("R") ) {
