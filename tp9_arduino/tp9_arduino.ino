@@ -19,8 +19,8 @@
  
 // definition des connexions 
 int trigPin = 7;  // pin "trig" branchée dans le 7 de l'Arduino
-int echoPin = 6;  //pin "echo" branchée dans le 6 de l'Arduino
-
+int echoPin = 6;  // pin "echo" branchée dans le 6 de l'Arduino
+ 
 /*******************LCD 2004 I2C*************************
 * YourDuino.com Example Software Sketch
 * 20 character 4 line I2C Display
