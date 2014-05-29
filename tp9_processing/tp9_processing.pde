@@ -10,7 +10,7 @@ void setup() {
   // création d'une fenêtre de 400×400 pixels
   size(2120, 1280);
   
-  // initialisation du port série pour communiquer avec Arduino, mettre la bonne valeur
+  // initialisation du port série pour communiquer avec Arduino
   myPort = new Serial(this, Serial.list()[1], 9600);
   myPort.bufferUntil('\n');
   
@@ -22,8 +22,8 @@ void setup() {
 
 void draw() {
  
-//  nothing to do, all are in serial event
-
+// géré par serialEvent
+  
 }
 
 void serialEvent(Serial myPort) {
@@ -31,8 +31,8 @@ void serialEvent(Serial myPort) {
   String inString = myPort.readStringUntil('\n');
   inString.replace('\n', ' ');
   cmd=trim(inString);
-  if (inString != null) { // New data
-
+  if (inString != null) {
+      
        println("après:"+cmd+":");
        if ( cmd.equals("R") ) {
          println("red");
