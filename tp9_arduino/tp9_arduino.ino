@@ -84,7 +84,7 @@ void setup() {
   Serial.println("R");
   delay(150);  
   
-  lcd.begin(20,4);   // initialize the lcd for 16 chars 2 lines, turn on backlight
+  lcd.begin(20,4);   // initialize the lcd for 20 chars 4 lines, turn on backlight
 
 // ------- Quick 3 blinks of backlight  -------------
   for(int i = 0; i< 2; i++)
@@ -99,7 +99,7 @@ void setup() {
 //-------- Write characters on the display ------------------
 // NOTE: Cursor Position: (CHAR, LINE) start at 0  
   lcd.setCursor(0,0); 
-  lcd.print("Hello, world and!");
+  lcd.print("Hello, world !!!");
   delay(1000);
   lcd.setCursor(0,1);
   lcd.print("ARDUINO!");
