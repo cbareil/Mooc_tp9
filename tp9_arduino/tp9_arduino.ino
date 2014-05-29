@@ -121,14 +121,14 @@ void setup() {
 void loop() {
   long temps, distance;
  
-  // Nous envoyons un signal haut d'une dur�e de 10 microsecondes, en sandwich
-  // entre deux signaux bas.  Des ultrasons sont �mis pendant que le signal est haut
+  // Nous envoyons un signal haut d'une durée de 10 microsecondes, en sandwich
+  // entre deux signaux bas.  Des ultrasons sont émis pendant que le signal est haut
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
  
-  // Lors de la r�ception de l'écho, le module HC-SR04 émet
-  // un signal logique haut (5 v) dont la dur�e est �gale au
+  // Lors de la réception de l'écho, le module HC-SR04 émet
+  // un signal logique haut (5 v) dont la durée est égale au
   // temps écoulé entre l'émission et la réception de l'ultrason.
   pinMode(echoPin, INPUT);
   temps = pulseIn(echoPin, HIGH);
