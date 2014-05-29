@@ -1,6 +1,6 @@
 /*******************ULTRASONS HC-SR04*************************
  * 
- * Demonstration de l'utilisation du module à ultrasons HC-SR04
+ * Démonstration de l'utilisation du module à ultrasons HC-SR04
  * avec un Arduino. La distance mesurée par le module est affichée
  * sur le LCD
  * 
