@@ -22,7 +22,7 @@ void setup() {
 
 void draw() {
  
-// géré par serialEvent
+// drawing géré uniquement dans serialEvent
   
 }
 
